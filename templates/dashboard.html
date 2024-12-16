@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <h3>Uploaded Files:</h3>
+    <ul>
+        {% for file in files %}
+            <li><strong>{{ file.filename }}</strong>: {{ file.description }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('upload') }}">Upload a New File</a> |
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
