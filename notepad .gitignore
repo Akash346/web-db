@@ -18,6 +18,9 @@ __pycache__/
 *.db
 uploads/
 *.pyc
+# Ignore virtual environments
+venv/
+
 
 # Ignore Jupyter Notebook checkpoints
 .ipynb_checkpoints/
